@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calm Café | Effects</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="theme-cafe">
+  <header class="site-header">
+    <div class="brand">
+      <img src="images/4.jpg" alt="Cafe Logo" class="logo" />
+      <h1>Calm Café</h1>
+    </div>
+    <nav class="main-nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="effects.html" class="nav-link active">Effects</a>
+      <a href="dom.html" class="nav-link">DOM</a>
+      <a href="animations.html" class="nav-link">Animations</a>
+      <a href="project.html" class="nav-link">Project</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="card fade-in">
+      <h2>☕ Part 2 - Effects</h2>
+      <p class="muted small">Gentle hide, fade, and slide effects — like opening and closing a cozy café window.</p>
+    </div>
+
+    <!-- Task 2: Visibility Methods -->
+    <div class="card fade-in">
+      <h3>Visibility</h3>
+      <p id="visibilityText">Welcome to our calm little café, where every cup tells a story.</p>
+      <div class="controls">
+        <button id="hideText" class="btn primary">Hide</button>
+        <button id="showText" class="btn primary">Show</button>
+        <button id="toggleText" class="btn">Toggle</button>
+      </div>
+    </div>
+
+    <!-- Task 3: Fade Methods -->
+    <div class="card fade-in">
+      <h3>Fade</h3>
+      <img id="fadeImg" class="preview" src="images/9.jpg" alt="Latte Art" />
+      <div class="controls">
+        <button id="fadeOut" class="btn primary">Fade Out</button>
+        <button id="fadeIn" class="btn primary">Fade In</button>
+        <button id="fadeToggle" class="btn">Toggle</button>
+      </div>
+    </div>
+
+    <!-- Task 4: Slide Methods -->
+    <div class="card fade-in">
+      <h3>Slide</h3>
+      <button id="slideToggle" class="btn primary">Panel</button>
+      <div id="panel" class="panel" style="display:none;">
+        <p>Our daily special: rose cappuccino with vanilla foam — light, smooth, and warm.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 Calm Café | Soft Effects</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

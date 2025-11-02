@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calm Café | Animations</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="theme-cafe">
+  <header class="site-header">
+    <div class="brand">
+      <img src="images/4.jpg" alt="Cafe Logo" class="logo" />
+      <h1>Calm Café</h1>
+    </div>
+    <nav class="main-nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="effects.html" class="nav-link">Effects</a>
+      <a href="dom.html" class="nav-link">DOM</a>
+      <a href="animations.html" class="nav-link active">Animations</a>
+      <a href="project.html" class="nav-link">Project</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="card fade-in">
+      <h2>☕ Part 4 - Animations</h2>
+      <p class="muted small">Smooth, calm, and elegant — each move like a latte swirl.</p>
+    </div>
+
+    <div class="card fade-in">
+      <h3>Latte Motion</h3>
+      <p>Soft movement, warm tones, and gentle flow animations.</p>
+
+      <div id="animWrap">
+        <div class="box" id="latteBox"></div>
+      </div>
+
+      <div class="controls">
+        <button id="task8" class="btn primary">Move</button>
+        <button id="task9" class="btn primary">Flow</button>
+        <button id="task10" class="btn primary">Blend</button>
+        <button id="resetLatte" class="btn">Reset</button>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 Calm Café | Latte Motion</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

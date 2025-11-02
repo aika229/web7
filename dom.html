@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calm Café | DOM Manipulation</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="theme-cafe">
+  <header class="site-header">
+    <div class="brand">
+        <img src="images/4.jpg" alt="Cafe Logo" class="logo" />
+      <h1>Calm Café</h1>
+    </div>
+    <nav class="main-nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="effects.html" class="nav-link">Effects</a>
+      <a href="dom.html" class="nav-link active">DOM</a>
+      <a href="animations.html" class="nav-link">Animations</a>
+      <a href="project.html" class="nav-link">Project</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="card fade-in">
+      <h2>☕ Part 3 - DOM Manipulation</h2>
+      <p class="muted small">
+        Softly crafting and changing what you see — just like a barista perfecting a cup.
+      </p>
+    </div>
+
+    <!-- Task 5: Add & Remove Elements -->
+    <div class="card fade-in">
+      <h3>Daily Menu</h3>
+      <ul id="menuList" class="list">
+        <li>Vanilla Latte</li>
+        <li>Hazelnut Mocha</li>
+        <li>Caramel Cappuccino</li>
+      </ul>
+      <div class="controls">
+        <button id="addItem" class="btn primary">Add</button>
+        <button id="prependItem" class="btn primary">Top</button>
+        <button id="removeItem" class="btn">Remove</button>
+      </div>
+    </div>
+
+    <!-- Task 6: Modifying Attributes -->
+    <div class="card fade-in">
+      <h3>Special of the Day</h3>
+      <img id="drinkImg" class="preview"
+           src="images/3.jpg"
+           alt="Café Special" />
+      <p>
+        <a id="drinkLink" href="https://abeautifulmess.com/coffee-recipes/" target="_blank">View recipe</a>
+      </p>
+      <div class="controls">
+        <button id="changeImg" class="btn primary">Change Image</button>
+        <button id="changeLink" class="btn">Change Link</button>
+      </div>
+    </div>
+
+    <!-- Task 7: Form Interaction -->
+    <div class="card fade-in">
+      <h3>Join Our Coffee Club</h3>
+      <form id="contactForm">
+        <label for="name">Name:</label><br />
+        <input type="text" id="name" placeholder="Your name" /><br /><br />
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" placeholder="you@example.com" />
+        <button type="button" id="sendForm" class="btn primary">Send</button>
+      </form>
+
+      <div id="liveOutput" class="panel" style="margin-top:15px;">
+        <p><strong>Live Preview:</strong></p>
+        <p id="outputName">Name: —</p>
+        <p id="outputEmail">Email: —</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 Calm Café | DOM Delights</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
