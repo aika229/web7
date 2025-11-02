@@ -74,7 +74,7 @@ $("#removeItem").click(() => {
 
 // Task 6 — Modifying Attributes
 $("#changeImg").click(() => {
-  $("#drinkImg").attr("src", "images/Coffee.jpg");
+  $("#drinkImg").attr("src", "Coffee.jpg");
 });
 
 $("#changeLink").click(() => {
